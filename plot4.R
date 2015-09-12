@@ -9,6 +9,7 @@ x4<-as.numeric(as.character(useabledata$Global_reactive_power))
 dates<-paste(useabledata$Date, useabledata$Time)
 datetime<-strptime(dates, "%d/%m/%Y %H:%M:%S")
 
+
 png("plot4.png", height=480, width=480)
 par(mfcol=c(2,2))
 #Graph 1
